@@ -1,28 +1,21 @@
-/*
-SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-FONT SIZE SYSTEM (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-*/
-
-/* Main color: ##f08c00
-   grey color: #343a40 */
+:root {
+  --primary-color: #76400e;
+  --secondary-color: #753b1e;
+  --text-color: #343a40;
+  --background-color: #ffffff;
+  --accent-color: #d1b3a5;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: #fff4e6; */
 }
 
-/* ------------------------ */
-/* GENERAL STYLES */
-/* ------------------------ */
 body {
   font-family: "Inter", sans-serif;
-  color: #343a40;
-  border-bottom: 8px solid #753b1e;
+  color: var(--text-color);
+  border-bottom: 8px solid var(--secondary-color);
 }
 
 .container {
@@ -36,7 +29,7 @@ section {
 }
 
 h2 {
-  font-size: 36x;
+  font-size: 36px;
   margin-bottom: 48px;
   letter-spacing: -0.5px;
 }
@@ -47,14 +40,10 @@ h2 {
   column-gap: 80px;
 }
 
-/* ------------------------ */
-/* COMPONENT STYLES */
-/* ------------------------ */
-
 .btn:link,
 .btn:visited {
-  background-color: #76400e;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  color: var(--background-color);
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -64,7 +53,7 @@ h2 {
 
 .btn:hover,
 .btn:active {
-  background-color: #753b1e;
+  background-color: var(--secondary-color);
 }
 
 .btn--big {
@@ -96,7 +85,6 @@ h1 {
   line-height: 1.1;
   letter-spacing: -1px;
   margin-bottom: 32px;
-  /* text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); */
 }
 
 .header-text {
@@ -110,7 +98,7 @@ img {
 
 /* FEATURES */
 .feature-icon {
-  stroke: #76400e;
+  stroke: var(--primary-color);
   width: 32px;
   height: 32px;
   margin-bottom: 24px;
@@ -128,8 +116,8 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
-  background-color: #76400e;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  color: var(--background-color);
   padding: 24px;
   border-radius: 12px;
 }
@@ -149,13 +137,13 @@ img {
   margin-bottom: 24px;
   font-size: 18px;
   line-height: 1.7;
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 .testimonial-author {
-  color: #d1b3a5;
+  color: var(--accent-color);
 }
-/* CHAIRS */
+/* POTTERY*/
 .pottery {
   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
   border-radius: 12px;
@@ -191,7 +179,7 @@ h3 {
 }
 
 .pottery-icon {
-  stroke: #76400e;
+  stroke: var(--primary-color);
   width: 24px;
   height: 24px;
 }
