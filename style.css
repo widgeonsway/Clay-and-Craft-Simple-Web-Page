@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --primary-color: #76400e;
   --secondary-color: #753b1e;
@@ -6,6 +7,8 @@
   --accent-color: #d1b3a5;
 }
 
+=======
+>>>>>>> c7d4314126931b26de85623e2cbe8126fc633806
 * {
   margin: 0;
   padding: 0;
@@ -85,6 +88,10 @@ h1 {
   line-height: 1.1;
   letter-spacing: -1px;
   margin-bottom: 32px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7d4314126931b26de85623e2cbe8126fc633806
 }
 
 .header-text {
@@ -143,7 +150,11 @@ img {
 .testimonial-author {
   color: var(--accent-color);
 }
+<<<<<<< HEAD
 /* POTTERY*/
+=======
+/* POTTERY */
+>>>>>>> c7d4314126931b26de85623e2cbe8126fc633806
 .pottery {
   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
   border-radius: 12px;
